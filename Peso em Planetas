@@ -1,0 +1,81 @@
+<?php
+
+$pesoterra;
+$planeta;
+$tot;
+
+echo "Planetas ";
+echo "\nMercúrio (1)";
+echo "\nVênus (2)";
+echo "\nMarte (3)";
+echo "\nJupiter (4)";
+echo "\nSaturno (5)";
+echo "\nUrano (6)";
+echo "\nNetuno (7)";
+
+echo "\nQual planeta escolhido? ";
+$planeta = readline ();
+echo "\nQual seu peso na Terra?";
+$pesoterra = readline ();
+
+switch ($planeta) {
+    case '1':
+        $tot = $pesoterra * 0.376;
+        if ($tot = 11.55)
+        {
+            return 0;
+        }
+        break;
+    case '2':
+        $tot = $pesoterra * 0.903;
+        if ($tot = 11.55)
+        {
+            return 0;
+        }
+        break;
+    case '3':
+        $tot = $pesoterra * 0.380;
+        if ($tot = 11.55)
+        {
+            return 0;
+        }
+        break;
+    case '4':
+        $tot = $pesoterra * 2.340;
+        if ($tot = 11.55)
+        {
+            return 0;
+        }
+        break;
+    case '5':
+        $tot = $pesoterra * 1.160;
+        if ($tot = 11.55)
+        {
+            return 0;
+        }
+        break;
+    case '6':
+        $tot = $pesoterra * 1.150;
+        if ($tot = 11.55)
+        {
+            return 0;
+        }
+        break;
+    case '7':
+        $tot = $pesoterra * 1.190;
+        if ($tot = 11.55)
+        {
+            return 0;
+        }
+        break;
+    
+    default:
+        echo "Comando Inválido";
+        break;
+}
+
+    echo "\nSeu peso no Planeta escolhido será " . number_format($tot, 2),"Kg";
+
+
+
+?>
