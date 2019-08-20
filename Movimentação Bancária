@@ -1,0 +1,44 @@
+<?php
+
+// Movimentação Bancária
+$operacao;
+$valor;
+$tot;
+
+echo "Operação Bancária";
+echo "\n(A) Depósito";
+echo "\n(B) Retirada";
+echo "\n(C) Saldo Atual";
+echo "\n(D) Sair";
+
+echo "\nQual operação prosseguir? ";
+$operacao = readline ();
+
+switch ($operacao) {
+    case 'A':
+        echo "\nQual valor a ser depositado? ";
+        $valor = readline ();
+        $tot = $valor;
+    break;
+    
+    case 'B':
+        echo "\nQual valor deseja retirar? ";
+        $valor = readline ();
+        $tot = $tot - $valor;
+    break;
+    
+    case 'C':
+        echo "\nSaldo Atual: ". number_format($tot, 2);
+    break;
+    
+    case 'D':
+        return 0;
+    break;
+    
+    default:
+        echo "Operação Inválida";
+    break;
+}
+
+
+?>
