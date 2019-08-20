@@ -1,0 +1,67 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    int planeta; 
+    float tot, pesoterra;
+    
+    printf ("Planetas ");
+    printf ("\nMercúrio (1)");
+    printf ("\nVênus (2)");
+    printf ("\nMarte (3)");
+    printf ("\nJupiter (4)");
+    printf ("\nSaturno (5)");
+    printf ("\nUrano (6)");
+    printf ("\nNetuno (7)");
+    
+    printf ("\nQual Planeta escolhido? ");
+    scanf ("%d", &planeta);
+    printf ("\nQual seu peso na Terra? ");
+    scanf ("%f", &pesoterra);
+    
+    switch (planeta)
+    {
+        case '1':
+            tot = (pesoterra * 0.376);
+        break;
+        
+        case '2':
+            tot = (pesoterra * 0.903);
+        break;
+        
+        case '3':
+            tot = (pesoterra * 0.380);
+        break;
+        
+        case '4':
+            tot = (pesoterra * 2.340);
+        break;
+        
+        case '5':
+            tot = (pesoterra * 1.160);
+        break;
+        
+        case '6':
+            tot = (pesoterra * 1.150);
+        break;
+        
+        case '7':
+            tot = (pesoterra * 1.190);
+        break;
+        
+        default:
+            printf ("Comando Inválido");
+        break;
+    }
+    
+    printf ("\nSeu peso no Planeta escolhido será: %f", tot);
+    return 0;
+}
