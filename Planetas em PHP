@@ -21,6 +21,7 @@ $pesoterra = readline ();
 switch ($planeta) {
     case '1':
         $tot = $pesoterra * 0.376;
+        echo "S\neu peso em Mercúrio é: $tot";
         if ($tot = 11.55)
         {
             return 0;
@@ -28,6 +29,7 @@ switch ($planeta) {
         break;
     case '2':
         $tot = $pesoterra * 0.903;
+        echo "\nSeu peso em Vênus é: $tot";
         if ($tot = 11.55)
         {
             return 0;
@@ -35,6 +37,7 @@ switch ($planeta) {
         break;
     case '3':
         $tot = $pesoterra * 0.380;
+        echo "\nSeu peso em Marte é: $tot";
         if ($tot = 11.55)
         {
             return 0;
@@ -42,6 +45,7 @@ switch ($planeta) {
         break;
     case '4':
         $tot = $pesoterra * 2.340;
+        echo "\nSeu peso em Jupiter é: $tot";
         if ($tot = 11.55)
         {
             return 0;
@@ -49,6 +53,7 @@ switch ($planeta) {
         break;
     case '5':
         $tot = $pesoterra * 1.160;
+        echo "\nSeu peso em Saturno é: $tot";
         if ($tot = 11.55)
         {
             return 0;
@@ -56,6 +61,7 @@ switch ($planeta) {
         break;
     case '6':
         $tot = $pesoterra * 1.150;
+        echo "\nSeu peso em Urano é: $tot";
         if ($tot = 11.55)
         {
             return 0;
@@ -63,6 +69,7 @@ switch ($planeta) {
         break;
     case '7':
         $tot = $pesoterra * 1.190;
+        echo "\nSeu peso em Netuno é: $tot";
         if ($tot = 11.55)
         {
             return 0;
@@ -74,7 +81,7 @@ switch ($planeta) {
         break;
 }
 
-    echo "\nSeu peso no Planeta escolhido será " . number_format($tot, 2),"Kg";
+
 
 
 
