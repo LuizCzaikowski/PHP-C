@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int op, valor, ret, tot;
+
+        printf ("Banco da Espanha");
+        printf ("\nSelecione a operacao: ");
+        printf ("\nDeposito ( 1 )");
+        printf ("\nRetirada ( 2 )");
+        printf ("\nSaldo Atual ( 3 )");
+        printf ("\nSair ( 4 )");
+        
+    while (op < 4)
+ {
+        
+    
+        printf ("\nSelecione a operacao: ");
+        scanf ("%d", &op);
+
+
+          switch (op)
+            {
+                case 1:
+                    printf ("\nDeposito selecionado");
+                    printf ("\nQual valo deseja depositar? ");
+                    scanf ("%d", &valor);
+                    tot = valor;
+                break;
+
+                case 2:
+                    printf ("\nRetirada");
+                    printf ("\nQuanto deseja retirar? ");
+                    scanf ("%d", &ret);
+                    tot = tot - ret;
+                break;
+
+                case 3:
+                    printf ("\nSaldo Atual: %d", tot);
+                break;
+
+                default:
+                    printf ("\nOperacao Invalida");
+                break;
+            }
+ }
+
+
+
+
+    return 0;
+}
