@@ -5,16 +5,15 @@ int main()
 {
     int op, valor, ret, tot;
 
-        printf ("Banco da Espanha");
+        
+    while (op != 4)
+ {
+        printf ("\nBanco da Espanha");
         printf ("\nSelecione a operacao: ");
         printf ("\nDeposito ( 1 )");
         printf ("\nRetirada ( 2 )");
         printf ("\nSaldo Atual ( 3 )");
         printf ("\nSair ( 4 )");
-        
-    while (op < 4)
- {
-        
     
         printf ("\nSelecione a operacao: ");
         scanf ("%d", &op);
@@ -42,6 +41,12 @@ int main()
 
                 default:
                     printf ("\nOperacao Invalida");
+                break;
+                
+                case 4:
+                    printf ("Obrigado e volte sempre!!!");
+                    return 0;
+                    
                 break;
             }
  }
