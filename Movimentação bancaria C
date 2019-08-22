@@ -3,56 +3,68 @@
 
 int main()
 {
-    int op, valor, ret, tot;
+    int op, valor, ret;
+    int tot = 0;
 
         
     while (op != 4)
  {
         printf ("\nBanco da Espanha");
+        printf ("\n");
         printf ("\nSelecione a operacao: ");
         printf ("\nDeposito ( 1 )");
         printf ("\nRetirada ( 2 )");
         printf ("\nSaldo Atual ( 3 )");
         printf ("\nSair ( 4 )");
-    
+        printf ("\n");
         printf ("\nSelecione a operacao: ");
         scanf ("%d", &op);
 
 
           switch (op)
             {
-                case 1:
-                    printf ("\nDeposito selecionado");
-                    printf ("\nQual valo deseja depositar? ");
+                
+                case 1:              
+                    printf ("\nDeposito selecionado:");
+                    printf ("\nQual valor deseja depositar?");
                     scanf ("%d", &valor);
-                    tot = valor;
-                break;
+                    if (valor <= 0)
+                    {
+                      printf ("\nValor inválido");
+                    }
+                    else
+                    {
+                        tot += valor;
+                    }
+                    break;
 
                 case 2:
                     printf ("\nRetirada");
                     printf ("\nQuanto deseja retirar? ");
                     scanf ("%d", &ret);
-                    tot = tot - ret;
-                break;
+                    if (tot < ret)
+                    {
+                      printf ("\nOperacao Inválida");
+                    }
+                    else 
+                    {
+                      tot = tot - ret;
+                    }
+                    break;
 
                 case 3:
                     printf ("\nSaldo Atual: %d", tot);
-                break;
-
-                default:
-                    printf ("\nOperacao Invalida");
-                break;
+                    break;
                 
                 case 4:
                     printf ("Obrigado e volte sempre!!!");
-                    return 0;
-                    
-                break;
+                    break;
+
+                default:
+                    printf ("Operacao Negada, realize um novo acesso");
+                    break;
             }
  }
-
-
-
 
     return 0;
 }
