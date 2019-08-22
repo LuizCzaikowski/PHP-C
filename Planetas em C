@@ -2,10 +2,18 @@
 
 int main()
 {
+
+ 
+
     int planeta; 
-    float tot, pesoterra;
-    
-    printf ("Planetas ");
+    float pesoterra;
+    float tot = 0;
+
+ while (planeta != 8)
+ { 
+    printf ("\n");
+    printf ("\nPLANETAS");
+    printf ("\n");
     printf ("\nMercúrio (1)");
     printf ("\nVênus (2)");
     printf ("\nMarte (3)");
@@ -13,7 +21,8 @@ int main()
     printf ("\nSaturno (5)");
     printf ("\nUrano (6)");
     printf ("\nNetuno (7)");
-    
+    printf ("\nSair (8)");
+    printf ("\n");
     printf ("\nQual Planeta escolhido? ");
     scanf ("%d", &planeta);
     printf ("\nQual seu peso na Terra? ");
@@ -22,72 +31,44 @@ int main()
     switch (planeta)
     {
         case 1:
-            tot = (pesoterra * 0.376);
-            if (tot = 11.55)
-            {
-                return 0;
-            }
-            printf ("\nSeu peso em Mercúrio será: %f", tot);
-        break;
+            tot = pesoterra * 0.376;
+            printf ("\nSeu peso em Mercúrio será: %.2f Kg", tot);
+            break;
         
         case 2:
-            tot = (pesoterra * 0.903);
-            if (tot = 11.55)
-            {
-                return 0;
-            }
-            printf ("\nSeu peso em Vênus será: %f", tot);
-        break;
+            tot = pesoterra * 0.903;
+            printf ("\nSeu peso em Vênus será: %.2f Kg", tot);
+            break;
         
         case 3:
-            tot = (pesoterra * 0.380);
-            if (tot = 11.55)
-            {
-                return 0;
-            }
-            printf ("\nSeu peso em Marte será: %f", tot);
-        break;
+            tot = pesoterra * 0.380;
+            printf ("\nSeu peso em Marte será: %.2f Kg", tot);
+            break;
         
         case 4:
-            tot = (pesoterra * 2.340);
-            if (tot = 11.55)
-            {
-                return 0;
-            }
-            printf ("\nSeu peso em Jupiter será: %f", tot);
-        break;
+            tot = pesoterra * 2.340;
+            printf ("\nSeu peso em Jupiter será: %.2f Kg", tot);
+            break;
         
         case 5:
-            tot = (pesoterra * 1.160);
-            if (tot = 11.55)
-            {
-                return 0;
-            }
-            printf ("\nSeu peso em Saturno será: %f", tot);
-        break;
+            tot = pesoterra * 1.160;
+            printf ("\nSeu peso em Saturno será: %.2f Kg", tot);
+            break;
         
         case 6:
-            tot = (pesoterra * 1.150);
-            if (tot = 11.55)
-            {
-                return 0;
-            }
-            printf ("\nSeu peso em Urano será: %f", tot);
-        break;
+            tot = pesoterra * 1.150;
+            printf ("\nSeu peso em Urano será: %.2f Kg", tot);
+            break;
         
         case 7:
-            tot = (pesoterra * 1.190);
-            if (tot = 11.55)
-            {
-                return 0;
-            }
-            printf ("\nSeu peso em Netuno será: %f", tot);
-        break;
+            tot = pesoterra * 1.190;
+            printf ("\nSeu peso em Netuno será: %.2f Kg", tot);
+            break;
         
         default:
             printf ("Comando Inválido");
-        break;
+            break;
     }
-    
+ } 
     return 0;
 }
